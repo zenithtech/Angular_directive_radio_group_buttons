@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/stylesheet" href="css/css.css"></link>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+</head>
+
+<body ng-app="MyApp">
+    <div ng-controller="MyCtrl">
+        <div class="exampleOne" ng-controller="groupOneCtrl">
+            <radio-button-group class="btn-group" data-toggle="buttons-radio" model="myModel" options="settingsPanelButtons" id="idProperty" classnames="classNamesProperty" suffix="bootstrapSuffix" cb="callback" btntext="showInnerText" ttip="showTTip">
+            </radio-button-group>
+        </div>
+        <div class="exampleTwo" ng-controller="groupTwoCtrl">
+            <radio-button-group class="btn-group" data-toggle="buttons-radio" model="myModel" options="settingsPanelNav" id="idProperty" classnames="classNamesProperty" suffix="bootstrapSuffix" cb="callback" btntext="showInnerText" ttip="showTTip">
+            </radio-button-group>
+        </div>
+    </div>
+</body>
+
+</html>

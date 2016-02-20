@@ -1,0 +1,75 @@
+body {
+    padding: 100px;
+}
+
+.exampleOne,
+.exampleTwo {
+    clear: both;
+}
+
+div.btn {
+    position: relative;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    float: left;
+    border: 1px solid #000;
+    opacity: 1;
+    padding: 4px;
+    margin: 10px 0;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+}
+
+div.btn.withText {
+    height: auto;
+    width: auto;
+    padding: 10px;
+}
+
+div.btn:hover {
+    background-color: #fff;
+}
+
+div.btn:hover .ttip {
+    display: block
+}
+
+div.btn .ttip {
+    display: none;
+    position: absolute;
+    top: -18px;
+    height: 14px;
+    background-color: #000;
+    color: #fff;
+    font-size: 9px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 3px;
+    overflow: visible;
+    margin: 0 0 0 -24px;
+    width: 74px;
+    line-height: 14px
+}
+
+div.btn .ttip:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    height: 0;
+    width: 0;
+    border: 5px solid #000;
+    left: 35px;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent
+}
+
+div.btn.active {
+    background-color: #44BA00;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, .2)
+}
+
+div.btn.active .ttip {
+    display: none
+}
