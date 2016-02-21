@@ -28,7 +28,6 @@ angular.module('MyApp.controllers', [])
         $scope.myModel = "Second Button"; // set default active button
         $scope.idProperty = "id";
         $scope.classNamesProperty = "classnames";
-        $scope.bootstrapSuffix = "default";
         $scope.callback = "cb";
         $scope.showInnerText = "btntext";
         $scope.showTTip = "ttip";
@@ -57,7 +56,6 @@ angular.module('MyApp.controllers', [])
     $scope.myModel = null; // set default active option
     $scope.idProperty = "id";
     $scope.classNamesProperty = "classnames";
-    $scope.bootstrapSuffix = "default";
     $scope.callback = "cb";
     $scope.showInnerText = "btntext";
     $scope.showTTip = "ttip";
